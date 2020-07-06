@@ -67,7 +67,7 @@
         <profile>
             <id>sonar</id>
             <properties>
-                <sonar.host.url>http://192.168.1.104:9000</sonar.host.url>
+                <sonar.host.url>http://192.168.0.172:9000</sonar.host.url>
                 <sonar.projectKey>Java-demo</sonar.projectKey>
             </properties>
             <build>
