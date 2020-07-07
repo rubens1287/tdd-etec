@@ -3,7 +3,7 @@ package tdd;
 public class RG {
 
     public boolean isValidaRG(String valor){
-        if ((valor.isEmpty()) || (valor.charAt(8) != '-')){
+        if((valor == null) ||  (valor.isEmpty()) ) {
             return false;
         }
         return true;
