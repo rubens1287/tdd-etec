@@ -10,8 +10,13 @@ public class RgTest {
 	@Test
 	public void testIsValidoRG() {
 		Assert.assertFalse("Valida RG Nulo: ",rg.isValidaRG(null));
-		/*Assert.assertFalse("Valida RG Vazio: ",rg.isValidaRG(""));
+		Assert.assertFalse("Valida RG Vazio: ",rg.isValidaRG(""));
 		Assert.assertFalse("Valida RG sem traço: ",rg.isValidaRG("335073138"));
-		Assert.assertTrue("Valida RG com um traço: ", rg.isValidaRG("33507313-X"));*/
+		Assert.assertTrue("Valida RG com um traço: ", rg.isValidaRG("33507313-X"));
+	}
+
+	@Test
+	public void testCadastraRG(){
+		Assert.assertTrue("Valida cadastro",rg.cadastro("33507313-X"));
 	}
 }
